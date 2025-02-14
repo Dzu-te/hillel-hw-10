@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 60px 1fr 60px;
+  align-items: center;
+  text-wrap: nowrap;
+}
+
+.wrapper-slider {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 1.5s ease-in-out;
+
+}
+
+.carousel-image {
+  width: 100%;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  justify-self: center;
+}
+
+.arrow:hover {
+  width: 60px;
+  height: 60px;
+}
+
+.arrow:hover circle {
+  fill: #8183fa;
+}
+
+.arrow-right,
+.arrow-left {
+  justify-self: center;
+}
