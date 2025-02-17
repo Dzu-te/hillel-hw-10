@@ -19,7 +19,6 @@
 .slider {
   display: flex;
   transition: transform 1.5s ease-in-out;
-
 }
 
 .carousel-image {
@@ -45,4 +44,29 @@
 .arrow-right,
 .arrow-left {
   justify-self: center;
+}
+
+.slider-dots-container {
+  height: 30px;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.slide-dot {
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slide-dot:hover {
+  background-color: #8183fa;
+}
+
+.slide-dot.active {
+  background-color: #8183fa;
 }
