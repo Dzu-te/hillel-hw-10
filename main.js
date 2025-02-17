@@ -80,19 +80,22 @@ function stopSlider() {
   console.log('Остановка слайдера');
 }
 
+
 function generateDots() {
   sliderDotsContainer.innerHTML = '';
-  for (let i = 0; i < carouselImageLength; i++) {
+  carouselImage.forEach((img, index) => {
     const dot = document.createElement('div');
     dot.classList.add('slide-dot');
-    dot.dataset.index = i;
+    dot.dataset.index = index;
+
     dot.addEventListener('click', () => {
       currentStateX = Number(dot.dataset.index);
       updateSlider();
       updateDots();
     });
+
     sliderDotsContainer.appendChild(dot);
-  }
+  });
 }
 
 
